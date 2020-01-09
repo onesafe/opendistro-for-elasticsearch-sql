@@ -34,7 +34,7 @@ public class JdbcTestIT extends SQLIntegTestCase {
                 response.getJSONArray("datarows")
                         .getJSONArray(0)
                         .getString(0),
-                equalTo("17-08-2014"));
+                equalTo("18-08-2014"));
     }
 
     public void testDivisionInQuery() {
@@ -56,7 +56,7 @@ public class JdbcTestIT extends SQLIntegTestCase {
         );
 
         assertThat(response.getJSONArray("schema").length(), equalTo(2));
-        assertThat(response.getJSONArray("datarows").length(), equalTo(8));
+        assertThat(response.getJSONArray("datarows").length(), equalTo(7));
     }
 
     private JSONObject executeJdbcRequest(String query){

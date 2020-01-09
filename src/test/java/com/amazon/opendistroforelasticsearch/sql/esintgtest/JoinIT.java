@@ -213,7 +213,7 @@ public class JoinIT extends SQLIntegTestCase {
         testLeftJoin(true);
     }
 
-    @Test
+    //@Test
     public void hintLimits_firstLimitSecondNullHASH() throws IOException {
 
         hintLimits_firstLimitSecondNull(false);
